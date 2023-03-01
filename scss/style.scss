@@ -1,0 +1,8 @@
+/* sass --watch ./scss/style.scss ./css/style.css*/
+@import "variables";
+@import 'login';
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}

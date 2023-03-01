@@ -1,0 +1,72 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.login-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+.login-container_logo {
+  width: 150px;
+  margin-bottom: 50px;
+  justify-self: center;
+  display: none;
+}
+@media (max-width: 640px) {
+  .login-container_logo {
+    display: block;
+  }
+}
+.login-container_title {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.login-container_subtitle {
+  color: #C7C7C7;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.login-container_form {
+  display: flex;
+  flex-direction: column;
+}
+.login-container_form_label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.login-container_form_inputPass {
+  background-color: #F7F7F7;
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  font-size: 16px;
+  padding: 6px;
+  margin-bottom: 12px;
+}
+.login-container_form_button {
+  background-color: #ACD9B2;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
