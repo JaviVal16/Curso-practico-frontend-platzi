@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+
+.desktop-menu {
+    width: 100px;
+    height: auto;
+    border: 1px solid $very-light-pink;
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            text-align: end;
+            font-weight: bold;
+
+            a {
+                color: $black;
+                text-decoration: none;
+                margin-bottom: 20px;
+                display: inline-block;
+
+            }
+        }
+
+        li:last-child {
+            padding-top: 20px;
+            border-top: 1px solid $very-light-pink;
+            font-weight: normal;
+
+            a {
+                color: $hospital-green;
+                font-size: $sm;
+            }
+        }
+    }
+}

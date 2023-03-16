@@ -1,0 +1,48 @@
+@import 'variables';
+@import 'mixins';
+
+.main-orders {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    &_resume {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-order {
+            width: 300px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 16px;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px 1px $hospital-green;
+
+            &_info {
+                p:nth-child(1) {
+                    margin: 16px 0 0 10px;
+                }
+
+                p:nth-child(2) {
+                    margin: 0 0 16px 10px;
+                    font-size: $sm;
+                    color: $very-light-pink;
+                }
+            }
+
+            &_price {
+                text-align: end;
+                font-weight: bold;
+            }
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+    }
+}

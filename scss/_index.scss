@@ -1,0 +1,60 @@
+@import "variables";
+@import "mixins";
+
+.main-cantainer {
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 26px;
+        place-content: center;
+
+        &-product {
+            width: 240px;
+
+            &_img {
+                width: 240px;
+                height: 240px;
+                border-radius: 20px;
+                object-fit: cover;
+
+                @media (max-width: 640px) {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+
+            &_info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 12px;
+
+                figure {
+                    margin: 0;
+                }
+
+                div p:nth-child(1) {
+                    font-weight: bold;
+                    font-size: $md;
+                    margin-top: 0px;
+                    margin-bottom: 4px;
+                }
+
+                div p:nth-child(2) {
+                    font-size: $sm;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    color: $very-light-pink;
+                }
+            }
+
+            @media (max-width: 640px) {
+                width: 140px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            grid-template-columns: repeat(auto-fill, 140px);
+        }
+    }
+}

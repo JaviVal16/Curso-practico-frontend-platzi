@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixins";
+
+.mobile-menu {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
+    ul {
+        padding: 0;
+        margin: 24px 0 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 24px;
+
+
+            a {
+                text-decoration: none;
+                color: $black;
+                font-weight: bold;
+
+            }
+        }
+
+    }
+
+    ul:nth-child(1) {
+        border-bottom: 1px solid $very-light-pink;
+    }
+
+    &_email {
+        font-size: $sm;
+        color: $very-light-pink;
+        font-weight: 300 !important;
+    }
+
+    &_sign-out {
+        font-size: $sm;
+        color: $hospital-green !important;
+
+    }
+}
