@@ -2,6 +2,9 @@
 @import "mixins";
 
 .desktop-menu {
+    position: absolute;
+    top: 50px;
+    right: 70px;
     width: 100px;
     height: auto;
     border: 1px solid $very-light-pink;

@@ -425,6 +425,9 @@
 }
 
 .desktop-menu {
+  position: absolute;
+  top: 50px;
+  right: 70px;
   width: 100px;
   height: auto;
   border: 1px solid #C7C7C7;
@@ -588,6 +591,7 @@
 @media (max-width: 640px) {
   .nav_menuicon {
     display: block;
+    cursor: pointer;
   }
 }
 .nav_left {
@@ -625,6 +629,7 @@
 .nav_rigth_ul_email {
   color: #C7C7C7;
   font-size: 14px;
+  cursor: pointer;
 }
 @media (max-width: 640px) {
   .nav_rigth_ul_email {
@@ -802,6 +807,10 @@
 body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
+}
+
+.inactive {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
