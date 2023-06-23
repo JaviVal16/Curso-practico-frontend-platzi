@@ -4,9 +4,12 @@
     position: absolute;
     right: 0;
     width: 400px;
-    height: 100%;
+    height: 90vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    /* background: $text-input-field; */
+    backdrop-filter: blur(20px);
+    border: 4px solid $hospital-green;
 
 
     @media (max-width: 640px) {
@@ -17,6 +20,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        padding-left: 15px;
 
         img {
             height: 20px;
@@ -34,9 +38,11 @@
     }
 
     &_products {
+        padding-left: 15px;
         display: flex;
         flex-direction: column;
         gap: 30px;
+        overflow-y: scroll;
 
         &_card {
             display: flex;

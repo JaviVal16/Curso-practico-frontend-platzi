@@ -13,3 +13,11 @@ menuBorgusa.addEventListener('click', () => {
     mobileMenu.classList.toggle('inactive');
     mainContiner.classList.toggle('inactive');
 });
+
+const cartBtn = document.querySelector('.nav_rigth_ul_cart');
+const cartDetail = document.querySelector('.cart-detail');
+
+cartBtn.addEventListener('click', () => {
+    cartDetail.classList.toggle('inactive');
+});
+
